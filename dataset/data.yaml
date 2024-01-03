@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../test/images
+test: ../valid/images
+
+nc: 1
+names: ["face_mask"]
+
+roboflow:
+  workspace: gemastik-x2ecs
+  project: deteksi-sampah-masker
+  version: 6
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/gemastik-x2ecs/deteksi-sampah-masker/dataset/6
