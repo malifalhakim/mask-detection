@@ -8,15 +8,15 @@ import random
 model_path = os.path.join('.','runs','detect','train4','weights','best.pt')
 model = YOLO(model_path)
 
-file_directory = os.path.join('.','DatasetV2','test','video-1')
+file_directory = os.path.join('.','dataset','test','video-1')
 list_file = os.listdir(file_directory)
 list_file = natsort.natsorted(list_file)
 
-label_directory = os.path.join('.','DatasetV2','test','label-1')
+label_directory = os.path.join('.','dataset','test','label-1')
 list_label = os.listdir(label_directory)
 list_label = natsort.natsorted(list_label)
 
-save_dir = os.path.join('.','DatasetV2','test','preds-1')
+save_dir = os.path.join('.','dataset','test','preds-1')
 video_out_path = os.path.join('.','video-out','video-1')
 
 print("START!")

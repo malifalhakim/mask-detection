@@ -2,15 +2,15 @@ import cv2
 import os
 import natsort
 
-file_directory = os.path.join('.','DatasetV2','test','video-5')
+file_directory = os.path.join('.','dataset','test','video-1')
 list_file = os.listdir(file_directory)
 list_file = natsort.natsorted(list_file)
 
-label_directory = os.path.join('.','DatasetV2','test','label-5')
+label_directory = os.path.join('.','dataset','test','label-1')
 list_label = os.listdir(label_directory)
 list_label = natsort.natsorted(list_label)
 
-save_dir = os.path.join('.','DatasetV2','test','ground-truth-5')
+save_dir = os.path.join('.','dataset','test','ground-truth-1')
 
 def read_label(filename,labelname,save_path):
     txtname = labelname
